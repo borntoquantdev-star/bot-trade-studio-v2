@@ -50,7 +50,7 @@
 ## ทางที่ 1 — เริ่มจากแม่แบบ (คริปโต + Python)
 
 ```bash
-gh repo create my-bot --template borntoquantdev-star/trade-bot --private --clone
+gh repo create my-bot --template borntoquantdev-star/trade-bot-v2 --private --clone
 cd my-bot
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -e ".[dev]"

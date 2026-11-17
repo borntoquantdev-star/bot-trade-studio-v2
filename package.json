@@ -1,9 +1,9 @@
 {
-  "name": "bot-trade-studio",
-  "version": "0.12.0",
+  "name": "bot-trade-studio-v2",
+  "version": "0.12.1",
   "description": "คู่มือสร้างบอทเทรดสำหรับคนที่ไม่ได้เขียนโปรแกรม ติดตั้งลงโปรเจคใดก็ได้ ใช้กับ Claude Code, Codex, Copilot, Cursor",
   "bin": {
-    "bot-trade-studio": "bin/install.js"
+    "bot-trade-studio-v2": "bin/install.js"
   },
   "files": [
     "bin/",
@@ -22,9 +22,9 @@
   "author": "Pairat",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/borntoquantdev-star/bot-trade-studio.git"
+    "url": "git+https://github.com/borntoquantdev-star/bot-trade-studio-v2.git"
   },
-  "homepage": "https://github.com/borntoquantdev-star/bot-trade-studio#readme",
+  "homepage": "https://github.com/borntoquantdev-star/bot-trade-studio-v2#readme",
   "keywords": [
     "trading",
     "bot",

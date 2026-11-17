@@ -2,7 +2,7 @@
 /**
  * ติดตั้งคู่มือสร้างบอทเทรดลงโปรเจคใดก็ได้ ด้วยคำสั่งเดียว
  *
- *   npx github:borntoquantdev-star/bot-trade-studio
+ *   npx github:borntoquantdev-star/bot-trade-studio-v2
  *
  * ไม่มี dependency ใช้แค่ไลบรารีมาตรฐานของ Node (>=18)
  * ตัวนี้ทำงานเหมือน tools/install-portable.py ทุกอย่าง มีไว้สองทางเพราะ
@@ -22,7 +22,7 @@ const CODEX = path.join(ROOT, "dist", "codex-prompts");
 const HELP = `
 สตูดิโอสร้างบอทเทรด — ตัวติดตั้งคู่มือ
 
-  npx github:borntoquantdev-star/bot-trade-studio [โฟลเดอร์] [ตัวเลือก]
+  npx github:borntoquantdev-star/bot-trade-studio-v2 [โฟลเดอร์] [ตัวเลือก]
 
 โฟลเดอร์      ปลายทาง ถ้าไม่ใส่จะใช้โฟลเดอร์ปัจจุบัน
 
@@ -42,7 +42,7 @@ const HELP = `
   AGENTS.md                         Codex CLI, Cursor, Gemini CLI         (agents)
 
 ถ้าใช้ Claude Code อยู่แล้ว การลงเป็น plugin สะดวกกว่า
-  /plugin install bot --marketplace borntoquantdev-star/bot-trade-studio
+  /plugin install bot --marketplace borntoquantdev-star/bot-trade-studio-v2
 `;
 
 const GROUPS = {

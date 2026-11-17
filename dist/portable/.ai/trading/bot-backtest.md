@@ -26,7 +26,7 @@ tradebot --help | grep backtest
 ```
 
 ถ้าไม่เจอ แปลว่าเขาใช้แม่แบบรุ่นเก่ากว่า 2.1 — ให้ `git pull` จาก
-`borntoquantdev-star/trade-bot` ก่อน
+`borntoquantdev-star/trade-bot-v2` ก่อน
 
 > `brokers/paper.py` คือ **paper broker ที่รัน offline** ไม่ใช่ backtest
 > มันจำลองการ fill ของออเดอร์ แต่ไม่ได้เดินผ่านประวัติราคาจริง — คนละอย่างกัน

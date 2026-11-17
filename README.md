@@ -1,4 +1,4 @@
-# bot-trade-studio
+# bot-trade-studio-v2
 
 ชุด skills สำหรับ Claude Code ที่พา **คนที่ไม่ได้เขียนโปรแกรม** สร้างบอทเทรดจนใช้ได้จริง
 ผู้ใช้ตอบคำถาม → AI แปลงเป็นสเปค YAML ที่อ่านเป็นภาษาคนได้ → ค่อย generate โค้ดจากสเปคนั้น
@@ -8,17 +8,17 @@
 ### ใช้ได้ทุกเครื่องมือ — คำสั่งเดียว
 
 ```bash
-npx github:borntoquantdev-star/bot-trade-studio
+npx github:borntoquantdev-star/bot-trade-studio-v2
 ```
 
 คัดลอกคู่มือลงโปรเจคที่อยู่ปัจจุบัน แล้วใช้ได้ทันทีกับ Claude Code, Codex, Copilot, Cursor
 ไม่ต้อง clone ไม่ต้องมีบัญชี npm ไม่ต้องลงอะไรค้างในเครื่อง
 
 ```bash
-npx github:borntoquantdev-star/bot-trade-studio --help          # ดูตัวเลือกทั้งหมด
-npx github:borntoquantdev-star/bot-trade-studio ./my-bot        # ระบุโฟลเดอร์
-npx github:borntoquantdev-star/bot-trade-studio --codex-global  # ใส่ slash command ให้ Codex ทั่วเครื่อง
-npx github:borntoquantdev-star/bot-trade-studio --only core     # เอาแค่คู่มือกลาง
+npx github:borntoquantdev-star/bot-trade-studio-v2 --help          # ดูตัวเลือกทั้งหมด
+npx github:borntoquantdev-star/bot-trade-studio-v2 ./my-bot        # ระบุโฟลเดอร์
+npx github:borntoquantdev-star/bot-trade-studio-v2 --codex-global  # ใส่ slash command ให้ Codex ทั่วเครื่อง
+npx github:borntoquantdev-star/bot-trade-studio-v2 --only core     # เอาแค่คู่มือกลาง
 ```
 
 ไฟล์ที่มีอยู่แล้วจะถูกข้าม เว้นแต่ใส่ `--force` รันซ้ำได้ไม่เสียหาย
@@ -28,13 +28,13 @@ npx github:borntoquantdev-star/bot-trade-studio --only core     # เอาแ�
 พิมพ์ใน Claude Code บรรทัดเดียว (ต้องเป็นเวอร์ชัน 2.1.275 ขึ้นไป):
 
 ```
-/plugin install bot --marketplace borntoquantdev-star/bot-trade-studio
+/plugin install bot --marketplace borntoquantdev-star/bot-trade-studio-v2
 ```
 
 เวอร์ชันเก่ากว่านั้นแยกเป็นสองบรรทัด:
 
 ```
-/plugin marketplace add borntoquantdev-star/bot-trade-studio
+/plugin marketplace add borntoquantdev-star/bot-trade-studio-v2
 /plugin install bot
 ```
 
@@ -132,11 +132,11 @@ AGENTS.md               Codex CLI · Cursor · Gemini CLI · Jules
 ## แม่แบบที่พิสูจน์แล้ว
 
 `/bot:scaffold` ไม่ได้เขียนบอทขึ้นใหม่ทุกครั้งอีกแล้ว ถ้าผู้ใช้เทรดคริปโตและรับ Python ได้
-มันจะเริ่มจาก [trade-bot](https://github.com/borntoquantdev-star/trade-bot)
+มันจะเริ่มจาก [trade-bot](https://github.com/borntoquantdev-star/trade-bot-v2)
 ซึ่งผ่าน **297 เทส offline** และ CI เขียวบน Python 3.10–3.12
 
 ```bash
-gh repo create my-bot --template borntoquantdev-star/trade-bot --private --clone
+gh repo create my-bot --template borntoquantdev-star/trade-bot-v2 --private --clone
 ```
 
 แล้วงานที่เหลือคือแมปสเปคจาก `bot/*.yaml` ลง config เขียนไฟล์กลยุทธ์ และเทสของมัน

@@ -12,14 +12,14 @@
 
 ```powershell
 # มี gh และล็อกอินแล้ว: ได้รีโปของตัวเองบน GitHub เก็บประวัติทุกรอบที่แก้กลยุทธ์
-gh repo create my-bot --template borntoquantdev-star/trade-bot --private --clone
+gh repo create my-bot --template borntoquantdev-star/trade-bot-v2 --private --clone
 
 # มีแค่ git
-git clone https://github.com/borntoquantdev-star/trade-bot my-bot
+git clone https://github.com/borntoquantdev-star/trade-bot-v2 my-bot
 
 # ไม่มีทั้งสองอย่าง
-Invoke-WebRequest -UseBasicParsing https://github.com/borntoquantdev-star/trade-bot/archive/refs/heads/main.zip -OutFile trade-bot.zip
-Expand-Archive trade-bot.zip . ; Rename-Item trade-bot-main my-bot ; Remove-Item trade-bot.zip
+Invoke-WebRequest -UseBasicParsing https://github.com/borntoquantdev-star/trade-bot-v2/archive/refs/heads/main.zip -OutFile trade-bot-v2.zip
+Expand-Archive trade-bot-v2.zip . ; Rename-Item trade-bot-v2-main my-bot ; Remove-Item trade-bot-v2.zip
 ```
 
 ## 2. แอพ (TradeBot.exe + หน้าบอร์ด + ตัวติดตั้ง Python)
@@ -28,7 +28,7 @@ Expand-Archive trade-bot.zip . ; Rename-Item trade-bot-main my-bot ; Remove-Item
 
 ```powershell
 cd my-bot
-Invoke-WebRequest -UseBasicParsing https://github.com/borntoquantdev-star/trade-bot/releases/latest/download/board-pack.zip -OutFile board-pack.zip
+Invoke-WebRequest -UseBasicParsing https://github.com/borntoquantdev-star/trade-bot-v2/releases/latest/download/board-pack.zip -OutFile board-pack.zip
 Expand-Archive board-pack.zip board-pack -Force
 Copy-Item board-pack\TradeBot.exe . -Force
 Remove-Item board-pack.zip

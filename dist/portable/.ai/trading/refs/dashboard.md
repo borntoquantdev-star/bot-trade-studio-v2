@@ -3,7 +3,7 @@
 > อ่านไฟล์นี้เมื่อผู้ใช้อยากเห็นว่าบอททำงานถูกไหม ไม่ใช่แค่อ่านตัวเลขสรุป
 > หรือเมื่อเขาพิมพ์ว่า "เปิดหน้าจอ" "ดู dashboard" "ดูบอททำงาน"
 
-แม่แบบ [trade-bot](https://github.com/borntoquantdev-star/trade-bot)
+แม่แบบ [trade-bot](https://github.com/borntoquantdev-star/trade-bot-v2)
 มี dashboard มาให้แล้วในโฟลเดอร์ `dashboard/`
 
 ```bash

@@ -4,7 +4,7 @@
 > ถ้าผู้ใช้เทรดคริปโตและยอมใช้ Python การ**เริ่มจากแม่แบบนี้** ให้ผลดีกว่าการเขียนขึ้นใหม่เสมอ
 > แม่แบบรองรับ **GRVT และ Hyperliquid** เลือกด้วย `exchange:` บรรทัดเดียวใน config
 
-https://github.com/borntoquantdev-star/trade-bot
+https://github.com/borntoquantdev-star/trade-bot-v2
 
 ## ทำไมต้องเริ่มจากแม่แบบ ไม่ใช่เขียนใหม่
 
@@ -42,7 +42,7 @@ https://github.com/borntoquantdev-star/trade-bot
 ## วิธีเริ่ม
 
 ```bash
-gh repo create my-bot --template borntoquantdev-star/trade-bot --private --clone
+gh repo create my-bot --template borntoquantdev-star/trade-bot-v2 --private --clone
 cd my-bot
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -e ".[dev]"     # mac/linux: .venv/bin/python
